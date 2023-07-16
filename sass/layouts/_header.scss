@@ -1,0 +1,220 @@
+/*//////////////////////////////////////////////////////
+Inicio Menu*/
+.menu {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  align-items: center;
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    color: #212121;
+    &:hover {
+      cursor: pointer;
+      color: $color-primary;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+  }
+
+  &__current {
+    color: $color-primary;
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $color-primary;
+      border-radius: 2px;
+      bottom: -24px;
+    }
+  }
+
+  &__icon-email,
+  &__icon-telephone {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    &:hover {
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+    }
+  }
+
+  &__contact {
+    width: 15px;
+    height: 15px;
+    color: #757575;
+    fill: #757575;
+    &:hover {
+      color: $color-primary;
+      fill: $color-primary;
+    }
+  }
+}
+
+/*Inicio HEADER*/
+.header {
+  &__title {
+    color: rgb(255, 255, 255);
+    height: 600px;
+    background: rgba(47, 48, 58, 0.4);
+    padding: 200px;
+    background-image: url(../images/header.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/*Inicio Mobile*/
+
+// body {
+//   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+//     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+//   line-height: 1.5;
+//   color: #212121;
+//   background-color: #fff;
+// }
+
+// .container {
+//   min-width: 320px;
+//   max-width: 1170px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// .page-header {
+//   box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+//     0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+// }
+
+// .page-header .container {
+//   min-height: 80px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-end;
+// }
+
+// .menu {
+//   display: flex;
+//   padding: 0;
+//   margin: 0;
+//   list-style: none;
+// }
+
+// .menu .link {
+//   padding: 10px;
+//   color: inherit;
+//   text-decoration: none;
+// }
+
+// .menu .link:hover,
+// .menu .link:focus {
+//   text-decoration: underline;
+// }
+
+
+// maximo hasta 480px
+@media screen and (max-width: 480px) {
+  .container{
+    max-width: 460px;
+  }
+  .item {
+    min-width: 0hv;
+    max-width: 0hv;
+    margin: 0;
+    padding: 2%;
+    background-color: red;
+  }
+}
+
+// maximo hasta 768px oculta el menu largo
+@media (max-width: 768px) {
+  .menu2 {
+    display: none;
+  }
+}
+
+// minimo hasta 481px y maximo hasta 779px
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    background-color: green;
+    align-items: center;
+  }
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+// minimo hasta 768px oculta el icono movil
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #fff;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: black;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+// 480px 768px  1200px

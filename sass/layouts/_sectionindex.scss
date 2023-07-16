@@ -1,0 +1,100 @@
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  justify-content: space-evenly;
+
+  &__container {
+    flex-basis: calc((70% - 20px) / 3);
+    padding: 9px;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  &_icon {
+    width: 260px;
+    height: 120px;
+    padding: 20px 90px;
+    border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #f5f4fa;
+  }
+
+  &__parrafo {
+    margin: 0;
+  }
+}
+
+/*//////////////////////////////////////////////////////*/
+/*Inicio SECTION - A qué nos dedicamos*/
+.block {
+  display: inline-block;
+  margin: 6px;
+
+  &__img {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    display: inline-block;
+    margin: 6px;
+  }
+
+  &__img1 {
+    background-image: url(../images/tablet-1.jpg);
+  }
+
+  &__img2 {
+    background-image: url(../images/portatil-2.jpg);
+  }
+
+  &__img3 {
+    background-image: url(../images/tablet-3.jpg);
+  }
+
+  &__shadow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}
+
+/*//////////////////////////////////////////////////////*/
+/*Target Nuestro Equipo*/
+.equipment {
+  background-color: #f5f4fa;
+  padding: 0;
+  text-align: center;
+
+  &__align li{
+    width: 200px;
+  display: inline-block;
+  max-width: 200px;
+  margin: 30px;
+  box-sizing: border-box;
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: white;
+  }
+}

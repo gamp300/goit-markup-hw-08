@@ -1,0 +1,77 @@
+.footer {
+  display: inline-block;
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  background: #30303a;
+
+  &__container {
+    display: flex;
+  }
+
+  &__section {
+    width: auto;
+    display: inline-block;
+    margin: 50px;
+  }
+
+  &__link {
+    color: white;
+    &:hover {
+      color: #03a9f4;
+    }
+  }
+
+  &__info {
+    color: #757575;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+/*Section 2*/
+  &__title {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+
+/*Section 3*/
+  &__form {
+    width: 550px;
+    display: inline-block;
+    margin: 65px 3px;
+  }
+
+  &__label {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__display {
+    display: flex;
+  }
+
+  &__input {
+    width: 330px;
+    height: 50px;
+    display: block;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #ffffff1a;
+    border-radius: 4px;
+    padding-left: 15px;
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  &__bottomicon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+}
+
+.salto {
+  white-space: pre-line;
+}
