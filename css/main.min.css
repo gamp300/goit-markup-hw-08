@@ -166,8 +166,8 @@ Inicio Menu*/
   .footer__section {
     text-align: center;
   }
-  .footer__form {
-    display: flex;
+  .button__footer {
+    display: block;
   }
 }
 @media (max-width: 768px) {
@@ -428,7 +428,7 @@ Inicio Menu*/
 .footer__form {
   width: 550px;
   display: inline-block;
-  margin: 65px 3px;
+  margin: auto;
 }
 .footer__label {
   color: rgb(255, 255, 255);

@@ -120,10 +120,9 @@ Inicio Menu*/
 //   text-decoration: underline;
 // }
 
-
 // maximo hasta 480px
 @media screen and (max-width: 480px) {
-  .container{
+  .container {
     max-width: 460px;
   }
   .item {
@@ -132,31 +131,31 @@ Inicio Menu*/
     background-color: red;
   }
 
-  .header__title{
-    display:grid;
+  .header__title {
+    display: grid;
     justify-content: center;
   }
 
-  h1{
+  h1 {
     font-size: 20px;
-    color:red;
+    color: red;
     display: flex;
     justify-content: center;
     line-height: 2;
   }
 
-  .block{
+  .block {
     background-color: violet;
     text-align: center;
   }
 
-  ul.clientes__company{
+  ul.clientes__company {
     height: auto;
     background-color: aqua;
     position: relative;
   }
 
-  .clientes__icon{
+  .clientes__icon {
     margin: 10px;
   }
 
@@ -164,16 +163,17 @@ Inicio Menu*/
     flex-direction: column;
     margin-top: 40px;
   }
-  
+
   .footer__section {
     text-align: center;
   }
 
-  .footer__form{
-    display: flex;
+
+  .button__footer {
+    display: block;
+        
   }
 }
-
 
 // maximo hasta 768px oculta el menu largo
 @media (max-width: 768px) {
@@ -193,17 +193,15 @@ Inicio Menu*/
       background-color: red;
     }
 
-    h1{
+    h1 {
       font-size: 20px;
-      color:red;
+      color: red;
       display: flex;
       justify-content: center;
       line-height: 2;
     }
   }
 }
-
-
 
 .menu-toggle {
   min-height: 40px;
