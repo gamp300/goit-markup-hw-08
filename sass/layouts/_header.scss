@@ -144,15 +144,43 @@ Inicio Menu*/
     line-height: 2;
   }
 
-  .block {
-    background-color: violet;
-    text-align: center;
+.block {
+  display: none !important;
+
+  &__h2 {
+    display: none !important;
   }
+}
 
   // .equipment__li{
   //   min-width: 380px;
   // }
 
+
+
+
+  .equipment{
+  
+  &__align{
+    width: 350px;
+  }
+  &__li {
+    width: 380px !important;
+  }
+  
+  
+  img{
+    width: 300px !important;
+    height: auto;
+    
+  }
+  
+  h3{
+      font-size: 30px;
+      text-align: center;
+    }
+
+  }
 
 
 
@@ -190,6 +218,7 @@ Inicio Menu*/
     max-width: 480px;
     display: block;
     text-align: center;
+    margin: 0;
   }
 
   .footer__title{

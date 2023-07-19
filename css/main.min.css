@@ -148,7 +148,23 @@ Inicio Menu*/
     line-height: 2;
   }
   .block {
-    background-color: violet;
+    display: none !important;
+  }
+  .block__h2 {
+    display: none !important;
+  }
+  .equipment__align {
+    width: 350px;
+  }
+  .equipment__li {
+    width: 380px !important;
+  }
+  .equipment img {
+    width: 300px !important;
+    height: auto;
+  }
+  .equipment h3 {
+    font-size: 30px;
     text-align: center;
   }
   ul.clientes__company {
@@ -177,6 +193,7 @@ Inicio Menu*/
     max-width: 480px;
     display: block;
     text-align: center;
+    margin: 0;
   }
   .footer__title {
     text-align: center;
