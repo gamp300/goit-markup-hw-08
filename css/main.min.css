@@ -153,7 +153,6 @@ Inicio Menu*/
   }
   ul.clientes__company {
     height: auto;
-    background-color: aqua;
     position: relative;
   }
   .clientes__icon {
@@ -161,13 +160,26 @@ Inicio Menu*/
   }
   .footer__container {
     flex-direction: column;
-    margin-top: 40px;
+    margin: 40px;
   }
   .footer__section {
     text-align: center;
   }
-  .button__footer {
+  form.footer__form {
+    padding: 0;
+    text-align: center;
+    max-width: 380px;
+  }
+  .footer__input {
+    min-width: 380px;
+  }
+  div.footer__display {
+    max-width: 480px;
     display: block;
+    text-align: center;
+  }
+  .footer__title {
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -422,6 +434,7 @@ Inicio Menu*/
   line-height: 16px;
 }
 .footer__title {
+  width: auto;
   color: rgb(255, 255, 255);
   font-size: 16px;
 }
@@ -439,9 +452,8 @@ Inicio Menu*/
   display: flex;
 }
 .footer__input {
-  width: 330px;
+  max-width: 330px;
   height: 50px;
-  display: block;
   color: #fff;
   background-color: transparent;
   outline: none;
@@ -455,6 +467,10 @@ Inicio Menu*/
   width: 24px;
   height: 24px;
   cursor: pointer;
+}
+
+.equipment__li {
+  max-width: 330px;
 }
 
 .salto {

@@ -149,9 +149,17 @@ Inicio Menu*/
     text-align: center;
   }
 
+  // .equipment__li{
+  //   min-width: 380px;
+  // }
+
+
+
+
+
+
   ul.clientes__company {
     height: auto;
-    background-color: aqua;
     position: relative;
   }
 
@@ -161,17 +169,31 @@ Inicio Menu*/
 
   .footer__container {
     flex-direction: column;
-    margin-top: 40px;
+    margin: 40px;
   }
 
-  .footer__section {
+  .footer__section{
     text-align: center;
   }
 
+  form.footer__form{
+    padding: 0;
+    text-align: center;
+    max-width: 380px;
+  }
 
-  .button__footer {
+  .footer__input{
+    min-width: 380px;
+  }
+
+  div.footer__display {
+    max-width: 480px;
     display: block;
-        
+    text-align: center;
+  }
+
+  .footer__title{
+    text-align: center;
   }
 }
 

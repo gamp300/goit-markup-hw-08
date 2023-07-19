@@ -31,6 +31,7 @@
 
 /*Section 2*/
   &__title {
+    width: auto;
     color: rgb(255, 255, 255);
     font-size: 16px;
   }
@@ -53,9 +54,8 @@
   }
 
   &__input {
-    width: 330px;
+    max-width: 330px;
     height: 50px;
-    display: block;
     color: #fff;
     background-color: transparent;
     outline: none;
@@ -71,6 +71,10 @@
     height: 24px;
     cursor: pointer;
   }
+}
+
+.equipment__li{
+  max-width: 330px;
 }
 
 .salto {
