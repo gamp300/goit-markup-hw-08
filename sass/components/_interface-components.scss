@@ -29,7 +29,7 @@
     }
   }
 
-  &__sendmodal-align{
+  &__sendmodal-align {
     text-align: center;
     padding: 10px;
   }
@@ -85,7 +85,7 @@
 
 /*Iconos*/
 /*footer Redes sociales*/
-.red-social{
+.red-social {
   width: 44px;
   height: 44px;
   display: inline-flex;
@@ -110,7 +110,7 @@
     transition: ease 0.5s;
   }
 
-  &__icon{
+  &__icon {
     width: 20px;
     height: 20px;
   }
@@ -133,16 +133,16 @@
     justify-content: space-evenly;
   }
 
-  &__icon{
-  width: 170px;
-  height: 81px;
-  font-size: 41px;
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  fill: #afb1b8;
+  &__icon {
+    width: 170px;
+    height: 81px;
+    font-size: 41px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
     &:hover {
       border-radius: 4px;
       display: inline-flex;
@@ -154,8 +154,19 @@
     }
   }
 
-  &__adjust{
+  &__adjust {
     width: auto;
     height: 46.7px;
+  }
+
+  @media screen and (max-width: 480px) {
+    &__company {
+      height: auto;
+      position: relative;
+    }
+
+    &__icon {
+      margin: 10px;
+    }
   }
 }

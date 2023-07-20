@@ -117,13 +117,47 @@ Inicio Menu*/
 /*Inicio HEADER*/
 .header__title {
   color: rgb(255, 255, 255);
-  height: 600px;
+  height: auto;
   background: rgba(47, 48, 58, 0.4);
   padding: 200px;
-  background-image: url(../images/header.jpg);
+  background-image: url(../images/desktop/img-título-desktop-1600.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 46.5%;
   text-align: center;
   background-size: cover;
   background-position: center;
+}
+@media screen and (max-width: 480px) {
+  .header__title {
+    display: grid;
+    justify-content: center;
+    background-image: url(../images/movil/img-título-movil-480.jpg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 46.5%;
+  }
+  .header__h1 {
+    font-size: 20px;
+    color: red;
+    line-height: 2;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header__title {
+    display: grid;
+    justify-content: center;
+    background-image: url(../images/tablet/img-título-tablet-768.jpg);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 46.5%;
+  }
+  .header__h1 {
+    font-size: 20px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    line-height: 3;
+  }
 }
 
 /*Inicio Mobile*/
@@ -131,41 +165,10 @@ Inicio Menu*/
   .container {
     max-width: 460px;
   }
-  .header__title {
-    display: grid;
-    justify-content: center;
-  }
-  h1 {
-    font-size: 20px;
-    color: red;
-    display: flex;
-    justify-content: center;
-    line-height: 2;
-  }
-  ul.clientes__company {
-    height: auto;
-    position: relative;
-  }
-  .clientes__icon {
-    margin: 10px;
-  }
 }
 @media (max-width: 768px) {
   .menu2 {
     display: none;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .header__title {
-    width: 100%;
-    height: 100%;
-  }
-  .header__title h1 {
-    font-size: 20px;
-    color: red;
-    display: flex;
-    justify-content: center;
-    line-height: 2;
   }
 }
 .menu-toggle {
@@ -374,26 +377,6 @@ Inicio Menu*/
   background-color: white;
 }
 
-@media screen and (max-width: 480px) {
-  .equipment__align {
-    width: 450px;
-    margin: 0;
-    align-items: center;
-    display: contents;
-  }
-  .equipment__li {
-    width: 480px;
-  }
-  .equipment img {
-    width: 450px;
-    height: auto;
-    text-align: center;
-  }
-  .equipment li {
-    width: 450px;
-    margin: 20px 0;
-  }
-}
 /*////////////////////////////////////////////*/
 /*Inicio Tarjetas Portafolio*/
 .card {
@@ -476,6 +459,7 @@ Inicio Menu*/
 }
 .footer__form {
   width: 550px;
+  max-width: 100%; /* Cambio aquí: establece un máximo del 100% del ancho */
   display: inline-block;
   margin: auto;
 }
@@ -485,10 +469,12 @@ Inicio Menu*/
   font-weight: 700;
 }
 .footer__display {
+  width: 500;
   display: flex;
 }
 .footer__input {
   max-width: 330px;
+  width: 100%; /* Cambio aquí: establece un ancho del 100% */
   height: 50px;
   color: #fff;
   background-color: transparent;
@@ -507,7 +493,7 @@ Inicio Menu*/
 @media screen and (max-width: 480px) {
   .footer__container {
     flex-direction: column;
-    margin: 40px;
+    margin: 30px auto;
   }
   .footer__section {
     text-align: center;
@@ -515,13 +501,15 @@ Inicio Menu*/
   .footer__form {
     padding: 0;
     text-align: center;
-    max-width: 380px;
+    max-width: 320px;
   }
   .footer__input {
-    min-width: 380px;
+    min-width: 200px;
+    display: flex;
+    margin: auto;
   }
   .footer__display {
-    max-width: 480px;
+    min-width: 320px;
     display: block;
     text-align: center;
     margin: 0;
@@ -681,6 +669,15 @@ Inicio Menu*/
 .clientes__adjust {
   width: auto;
   height: 46.7px;
+}
+@media screen and (max-width: 480px) {
+  .clientes__company {
+    height: auto;
+    position: relative;
+  }
+  .clientes__icon {
+    margin: 10px;
+  }
 }
 
 /*//////////////////////////////////////////////////////*/
