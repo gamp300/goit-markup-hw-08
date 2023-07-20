@@ -2,46 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/styleicons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>WebStudio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <title>WebStudio</title>
 </head>
 
 <body>
-  <header class="menu container">
-    <a Class="webstudio" href="index.html">WebStudio</a>
-    <nav>
+  <header class="menu container page-header">
+  
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="24" height="24" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd">
+        </path>
+      </svg>
+    </button>
+  
+  
+  
+  
+  
+  
+  
+    <a Class="webstudio menu2"" href=" index.html">WebStudio</a>
+    <nav class="menu2">
       <ul class="menu">
-        <li><a class="menu__link" href="index.html">Estudio</a></li>
-        <li><a class="menu__link menu__current" href="portafolio.html">Portafolio</a></li>
+        <li><a class="menu__link menu__current" href="index.html">Estudio</a></li>
+        <li><a class="menu__link" href="portafolio.html">Portafolio</a></li>
         <li><a class="menu__link" href="#">Contacto</a></li>
       </ul>
     </nav>
-    <ul class="menu">
+    <ul class="menu menu2">
       <li>
         <span>
-        <a class="menu__contact" href="mailto:info@example.com">
-          <svg class="menu__icon-email">
-            <use xlink:href="./images/icons.svg#icon-sobre"></use>
-          </svg>
-          info@example.com
-        </a>
+          <a class="menu__contact" href="mailto:info@example.com">
+            <svg class="menu__icon-email">
+              <use xlink:href="./images/icons.svg#icon-sobre"></use>
+            </svg>
+            info@example.com
+          </a>
         </span>
       </li>
       <li>
         <span>
-        <a class="menu__contact" href="tel:+525555296000">
-          <svg class="menu__icon-telephone">
-            <use xlink:href="./images/icons.svg#icon-telefono"></use>
-          </svg>
-          +52 55 5529 6000
-        </a>
+          <a class="menu__contact" href="tel:+525555296000">
+            <svg class="menu__icon-telephone">
+              <use xlink:href="./images/icons.svg#icon-telefono"></use>
+            </svg>
+            +52 55 5529 6000
+          </a>
         </span>
       </li>
     </ul>
@@ -62,7 +77,27 @@
           <li class="card__box">
             <a href="">
               <div class="card__image">
-                <img src="images/imagen1.jpg" alt="Digitando codigo" width="370" height="294">
+
+                <picture>
+                  <source media="(min-width:1200px)"
+                    srcset="./images/desktop-port/portafolio-1.webp, ./images/desktop-port/portafolio-1.webp 2x" 
+                    type="image/webp" width="370" />
+                  <source media="(min-width:1200px)"
+                    srcset="./images/desktop-port/portafolio-1.jpg 1x, ./images/desktop-port/portafolio-1.jpg 2x" 
+                    type="image/jpg" width="370" />
+                
+                  <source media="(min-width:768px)"
+                    srcset="./images/tablet-port/portafolio-1.webp 1x, ./images/tablet-port/portafolio-1.webp 2x"
+                    type="image/webp" width="370" />
+                  <source media="(min-width:768px)"
+                    srcset="./images/tablet-port/portafolio-1.jpg 1x, ./images/tablet-port/portafolio-1.jpg 2x" 
+                    type="image/jpg"
+                    width="370"/>
+                
+                  <img srcset="./images/movil-port/portafolio-1.jpg 1x,./images/movil-port/portafolio-1.jpg 2x"
+                    src="/images/movil-port/portafolio-1.jpg" width="370" alt="Digitando codigo" loading="lazy" />
+                </picture>
+
                 <p class="card__blue">
                   Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma para el espionaje digital y los ataques a los servidores seguros de la competencia.
                 </p>
@@ -122,6 +157,7 @@
           <li class="card__box">
             <a href="">
               <div class="card__image">
+                
                 <img src="images/imagen5.jpg" alt="Revisando la paleta de colores" width="370" height="294">
                 <p class="card__blue">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod illo cum consequatur harum dolorem molestias autem ad earum, aliquid inventore voluptatem unde ut aut obcaecati sit quibusdam aspernatur repellendus et!
@@ -264,7 +300,35 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd">
+        </path>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li><a class="link" href="index.html">Estudio</a></li>
+      <li><a class="link" href="portafolio.html">Portafolio</a></li>
+      <li><a class="link" href="#">Contacto</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous">
+      </script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>>
   </body>
   </html>
   
