@@ -131,11 +131,6 @@ Inicio Menu*/
   .container {
     max-width: 460px;
   }
-  .item {
-    margin: 0, 20px;
-    padding: 2%;
-    background-color: red;
-  }
   .header__title {
     display: grid;
     justify-content: center;
@@ -147,56 +142,12 @@ Inicio Menu*/
     justify-content: center;
     line-height: 2;
   }
-  .block {
-    display: none !important;
-  }
-  .block__h2 {
-    display: none !important;
-  }
-  .equipment__align {
-    width: 350px;
-  }
-  .equipment__li {
-    width: 380px !important;
-  }
-  .equipment img {
-    width: 300px !important;
-    height: auto;
-  }
-  .equipment h3 {
-    font-size: 30px;
-    text-align: center;
-  }
   ul.clientes__company {
     height: auto;
     position: relative;
   }
   .clientes__icon {
     margin: 10px;
-  }
-  .footer__container {
-    flex-direction: column;
-    margin: 40px;
-  }
-  .footer__section {
-    text-align: center;
-  }
-  form.footer__form {
-    padding: 0;
-    text-align: center;
-    max-width: 380px;
-  }
-  .footer__input {
-    min-width: 380px;
-  }
-  div.footer__display {
-    max-width: 480px;
-    display: block;
-    text-align: center;
-    margin: 0;
-  }
-  .footer__title {
-    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -208,10 +159,6 @@ Inicio Menu*/
   .header__title {
     width: 100%;
     height: 100%;
-  }
-  .header__title .block__img {
-    align-items: center;
-    background-color: red;
   }
   .header__title h1 {
     font-size: 20px;
@@ -306,12 +253,59 @@ Inicio Menu*/
   height: 120px;
   padding: 20px 90px;
   border-radius: 4px;
-  margin-right: auto;
-  margin-left: auto;
   background: #f5f4fa;
 }
 .item__parrafo {
   margin: 0;
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .item {
+    margin: 0;
+    padding: 60px 0;
+    border: 0;
+  }
+  .item__container {
+    min-width: 340px;
+    align-items: center;
+    margin: 0;
+    display: block;
+  }
+  .item_icon {
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item_icon svg {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .item {
+    margin: 0 20px;
+    padding: 2%;
+  }
+  .item__container {
+    min-width: 100%;
+    align-items: center;
+  }
+  .item_icon {
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item_icon svg {
+    width: auto;
+    height: auto;
+  }
 }
 
 /*//////////////////////////////////////////////////////*/
@@ -355,6 +349,14 @@ Inicio Menu*/
   padding-top: 27px;
   padding-bottom: 27px;
 }
+@media screen and (max-width: 767px) {
+  .block {
+    display: none !important;
+  }
+  .block__h2 {
+    display: none !important;
+  }
+}
 
 /*//////////////////////////////////////////////////////*/
 /*Target Nuestro Equipo*/
@@ -364,17 +366,34 @@ Inicio Menu*/
   text-align: center;
 }
 .equipment__align li {
-  width: 200px;
   display: inline-block;
-  max-width: 200px;
+  min-width: 200px;
   margin: 30px;
-  box-sizing: border-box;
-  width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: white;
 }
 
+@media screen and (max-width: 480px) {
+  .equipment__align {
+    width: 450px;
+    margin: 0;
+    align-items: center;
+    display: contents;
+  }
+  .equipment__li {
+    width: 480px;
+  }
+  .equipment img {
+    width: 450px;
+    height: auto;
+    text-align: center;
+  }
+  .equipment li {
+    width: 450px;
+    margin: 20px 0;
+  }
+}
 /*////////////////////////////////////////////*/
 /*Inicio Tarjetas Portafolio*/
 .card {
@@ -485,9 +504,31 @@ Inicio Menu*/
   height: 24px;
   cursor: pointer;
 }
-
-.equipment__li {
-  max-width: 330px;
+@media screen and (max-width: 480px) {
+  .footer__container {
+    flex-direction: column;
+    margin: 40px;
+  }
+  .footer__section {
+    text-align: center;
+  }
+  .footer__form {
+    padding: 0;
+    text-align: center;
+    max-width: 380px;
+  }
+  .footer__input {
+    min-width: 380px;
+  }
+  .footer__display {
+    max-width: 480px;
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  .footer__title {
+    text-align: center;
+  }
 }
 
 .salto {

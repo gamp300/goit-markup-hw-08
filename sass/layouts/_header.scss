@@ -125,11 +125,7 @@ Inicio Menu*/
   .container {
     max-width: 460px;
   }
-  .item {
-    margin: 0, 20px;
-    padding: 2%;
-    background-color: red;
-  }
+
 
   .header__title {
     display: grid;
@@ -144,43 +140,6 @@ Inicio Menu*/
     line-height: 2;
   }
 
-.block {
-  display: none !important;
-
-  &__h2 {
-    display: none !important;
-  }
-}
-
-  // .equipment__li{
-  //   min-width: 380px;
-  // }
-
-
-
-
-  .equipment{
-  
-  &__align{
-    width: 350px;
-  }
-  &__li {
-    width: 380px !important;
-  }
-  
-  
-  img{
-    width: 300px !important;
-    height: auto;
-    
-  }
-  
-  h3{
-      font-size: 30px;
-      text-align: center;
-    }
-
-  }
 
 
 
@@ -193,36 +152,6 @@ Inicio Menu*/
 
   .clientes__icon {
     margin: 10px;
-  }
-
-  .footer__container {
-    flex-direction: column;
-    margin: 40px;
-  }
-
-  .footer__section{
-    text-align: center;
-  }
-
-  form.footer__form{
-    padding: 0;
-    text-align: center;
-    max-width: 380px;
-  }
-
-  .footer__input{
-    min-width: 380px;
-  }
-
-  div.footer__display {
-    max-width: 480px;
-    display: block;
-    text-align: center;
-    margin: 0;
-  }
-
-  .footer__title{
-    text-align: center;
   }
 }
 
@@ -238,11 +167,6 @@ Inicio Menu*/
   .header__title {
     width: 100%;
     height: 100%;
-
-    .block__img {
-      align-items: center;
-      background-color: red;
-    }
 
     h1 {
       font-size: 20px;

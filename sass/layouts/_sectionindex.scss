@@ -21,16 +21,76 @@
     height: 120px;
     padding: 20px 90px;
     border-radius: 4px;
-    margin-right: auto;
-    margin-left: auto;
     background: #f5f4fa;
   }
 
   &__parrafo {
     margin: 0;
   }
+
+
+
+
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    margin: 0;
+    padding: 60px 0;
+    border: 0;
+
+    &__container {
+      min-width: 340px;
+      align-items: center;
+      margin: 0;
+      display: block;
+    }
+
+    &_icon {
+      width: 100%;
+      height: 120px;
+      padding: 20px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_icon svg {
+      width: auto;
+      height: auto;
+    }
+  }
+
+
+
+
+
+  @media screen and (max-width: 480px) {
+    margin: 0 20px;
+    padding: 2%;
+
+    &__container {
+      min-width: 100%;
+      align-items: center;
+    }
+
+    &_icon {
+      width: 100%;
+      height: 120px;
+      padding: 20px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_icon svg {
+      width: auto;
+      height: auto;
+    }
+  }
 }
 
+
+  
 /*//////////////////////////////////////////////////////*/
 /*Inicio SECTION - A qué nos dedicamos*/
 .block {
@@ -76,6 +136,16 @@
     padding-top: 27px;
     padding-bottom: 27px;
   }
+
+
+
+  @media screen and (max-width: 767px) {
+    display: none !important;
+    
+    &__h2 {
+      display: none !important;
+    }
+  }
 }
 
 /*//////////////////////////////////////////////////////*/
@@ -86,15 +156,40 @@
   text-align: center;
 
   &__align li{
-    width: 200px;
   display: inline-block;
-  max-width: 200px;
+  min-width: 200px;
   margin: 30px;
-  box-sizing: border-box;
-  width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: white;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .equipment{
+    &__align{
+      width: 450px;
+      margin: 0;
+      align-items: center;
+      display: contents;
+
+    }
+
+    &__li {
+      width: 480px;
+      
+    }
+  
+    img{
+      width: 450px;
+      height: auto;
+      text-align: center;
+    }
+
+    li{
+      width: 450px;
+      margin: 20px 0;
+    }
+  }
+}  
