@@ -57,13 +57,70 @@ Inicio Menu*/
   }
 }
 
+.mobile{
+  &__menu {
+    padding: 0;
+    margin-bottom: 100px;
+    list-style: none;
+  }
+
+  &__link {
+    font-size: 30px;
+    display: block;
+    padding: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  &__current{
+    font-size: 30px;
+    color: $color-primary;
+    font-weight: bold;
+  }
+
+  &__cont-contact{
+    margin-bottom:20px;
+  }
+
+  &__contact1{
+    font-size: 30px;
+    color:$color-primary;
+    padding: 10px;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+
+  &__contact2{
+    font-size: 30px;
+    color:#757575;
+    padding: 20px;
+    margin-bottom: 4px;
+  }
+
+  &__social{
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  &__link-social{
+    font-size: 20px;
+    color: $color-primary;
+  }
+
+  &__linea{
+    color:#757575;
+    font-size: 150%;
+  }
+}
+
 /*Inicio HEADER*/
 .header {
   &__title {
     color: rgb(255, 255, 255);
     height: auto;
     background: rgba(47, 48, 58, 0.4);
-    padding: 200px;
+    padding: 32px 118px;
     background-image: url(../images/desktop/img-título-desktop-1600.jpg);
     background-repeat: no-repeat;
     background-size: 100% 46.5%;
@@ -77,9 +134,6 @@ Inicio Menu*/
       display: grid;
       justify-content: center;
       background-image: url(../images/movil/img-título-movil-480.jpg);
-      background-position: right bottom;
-      background-repeat: no-repeat;
-      background-size: 100% 46.5%;
     }
 
     &__h1 {
@@ -91,11 +145,9 @@ Inicio Menu*/
   @media screen and (min-width: 481px) and (max-width: 767px) {
     &__title {
       display: grid;
+      padding: 100px 200px;
       justify-content: center;
       background-image: url(../images/tablet/img-título-tablet-768.jpg);
-      background-position: right bottom;
-      background-repeat: no-repeat;
-      background-size: 100% 46.5%;
     }
     
     &__h1 {
@@ -107,71 +159,12 @@ Inicio Menu*/
   }
 }
 
-/*Inicio Mobile*/
-
-// body {
-//   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-//     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-//   line-height: 1.5;
-//   color: #212121;
-//   background-color: #fff;
-// }
-
-// .container {
-//   min-width: 320px;
-//   max-width: 1170px;
-//   padding-left: 15px;
-//   padding-right: 15px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
-// .page-header {
-//   box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
-//     0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
-// }
-
-// .page-header .container {
-//   min-height: 80px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-end;
-// }
-
-// .menu {
-//   display: flex;
-//   padding: 0;
-//   margin: 0;
-//   list-style: none;
-// }
-
-// .menu .link {
-//   padding: 10px;
-//   color: inherit;
-//   text-decoration: none;
-// }
-
-// .menu .link:hover,
-// .menu .link:focus {
-//   text-decoration: underline;
-// }
-
-// maximo hasta 480px
-@media screen and (max-width: 480px) {
-  .container {
-    max-width: 460px;
-  }
-
-}
-
 // maximo hasta 768px oculta el menu largo
 @media (max-width: 768px) {
   .menu2 {
     display: none;
   }
 }
-
-// minimo hasta 481px y maximo hasta 779px
 
 .menu-toggle {
   min-height: 40px;
@@ -224,23 +217,4 @@ Inicio Menu*/
   right: 16px;
   color: black;
 }
-
-.mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.mobile-menu .link {
-  font-size: 60px;
-  display: block;
-  padding: 30px;
-  color: black;
-  text-decoration: none;
-}
-
-.mobile__current{
-  color: $color-primary;
-}
-
 // 480px 768px  1200px

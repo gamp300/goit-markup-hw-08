@@ -137,13 +137,11 @@
     padding-bottom: 27px;
   }
 
-
-
   @media screen and (max-width: 767px) {
-    display: none !important;
+    display: none;
     
     &__h2 {
-      display: none !important;
+      display: none;
     }
   }
 }

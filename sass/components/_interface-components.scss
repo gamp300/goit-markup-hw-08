@@ -169,4 +169,16 @@
       margin: 10px;
     }
   }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    &__company {
+      height: auto;
+      position: relative;
+    }
+
+    &__icon {
+      margin: 10px;
+    }
+  }
 }
+

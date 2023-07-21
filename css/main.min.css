@@ -129,12 +129,59 @@ Inicio Menu*/
   fill: #2196f3;
 }
 
+.mobile__menu {
+  padding: 0;
+  margin-bottom: 100px;
+  list-style: none;
+}
+.mobile__link {
+  font-size: 30px;
+  display: block;
+  padding: 30px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.mobile__current {
+  font-size: 30px;
+  color: #2196f3;
+  font-weight: bold;
+}
+.mobile__cont-contact {
+  margin-bottom: 20px;
+}
+.mobile__contact1 {
+  font-size: 30px;
+  color: #2196f3;
+  padding: 10px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.mobile__contact2 {
+  font-size: 30px;
+  color: #757575;
+  padding: 20px;
+  margin-bottom: 4px;
+}
+.mobile__social {
+  padding: 20px;
+  margin-top: 40px;
+}
+.mobile__link-social {
+  font-size: 20px;
+  color: #2196f3;
+}
+.mobile__linea {
+  color: #757575;
+  font-size: 150%;
+}
+
 /*Inicio HEADER*/
 .header__title {
   color: rgb(255, 255, 255);
   height: auto;
   background: rgba(47, 48, 58, 0.4);
-  padding: 200px;
+  padding: 32px 118px;
   background-image: url(../images/desktop/img-título-desktop-1600.jpg);
   background-repeat: no-repeat;
   background-size: 100% 46.5%;
@@ -147,9 +194,6 @@ Inicio Menu*/
     display: grid;
     justify-content: center;
     background-image: url(../images/movil/img-título-movil-480.jpg);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 46.5%;
   }
   .header__h1 {
     font-size: 20px;
@@ -159,11 +203,9 @@ Inicio Menu*/
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .header__title {
     display: grid;
+    padding: 100px 200px;
     justify-content: center;
     background-image: url(../images/tablet/img-título-tablet-768.jpg);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 46.5%;
   }
   .header__h1 {
     font-size: 20px;
@@ -173,12 +215,6 @@ Inicio Menu*/
   }
 }
 
-/*Inicio Mobile*/
-@media screen and (max-width: 480px) {
-  .container {
-    max-width: 460px;
-  }
-}
 @media (max-width: 768px) {
   .menu2 {
     display: none;
@@ -231,24 +267,6 @@ Inicio Menu*/
   top: 16px;
   right: 16px;
   color: black;
-}
-
-.mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.mobile-menu .link {
-  font-size: 60px;
-  display: block;
-  padding: 30px;
-  color: black;
-  text-decoration: none;
-}
-
-.mobile__current {
-  color: #2196f3;
 }
 
 .item {
@@ -371,10 +389,10 @@ Inicio Menu*/
 }
 @media screen and (max-width: 767px) {
   .block {
-    display: none !important;
+    display: none;
   }
   .block__h2 {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -688,6 +706,15 @@ Inicio Menu*/
   height: 46.7px;
 }
 @media screen and (max-width: 480px) {
+  .clientes__company {
+    height: auto;
+    position: relative;
+  }
+  .clientes__icon {
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .clientes__company {
     height: auto;
     position: relative;
