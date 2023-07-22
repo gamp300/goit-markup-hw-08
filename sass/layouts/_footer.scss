@@ -41,7 +41,7 @@
     width: 550px;
     max-width: 100%; /* Cambio aquí: establece un máximo del 100% del ancho */
     display: inline-block;
-    margin: auto;
+    margin: 100px 0;
   }
 
   &__label {
@@ -51,7 +51,7 @@
   }
 
   &__display {
-    width: 500;
+    width: 500px;
     display: flex;
   }
 
@@ -108,7 +108,34 @@
       text-align: center;
     }
   }
+
+
+/* Estilos para pantallas más grandes (ancho mínimo de 768px) */
+
+/* Estilos para pantallas entre 481px y 767px */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    &__container {
+        flex-wrap: wrap;
+        margin: 30px auto;
+        text-align: center;
+    }
+    
+    &__form{
+      margin-top: 30px;
+      width: 456px;
+      padding: 0;
+      text-align: center;
+    }
+
+    &__display {
+      margin-bottom: 40px;
+      display: block;
+      text-align: center;
+    }
+  }
 }
+
+
 
 .salto {
   white-space: pre-line;

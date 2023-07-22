@@ -466,6 +466,8 @@ Inicio Menu*/
   background: #30303a;
   /*Section 2*/
   /*Section 3*/
+  /* Estilos para pantallas más grandes (ancho mínimo de 768px) */
+  /* Estilos para pantallas entre 481px y 767px */
 }
 .footer__container {
   display: flex;
@@ -496,7 +498,7 @@ Inicio Menu*/
   width: 550px;
   max-width: 100%; /* Cambio aquí: establece un máximo del 100% del ancho */
   display: inline-block;
-  margin: auto;
+  margin: 100px 0;
 }
 .footer__label {
   color: rgb(255, 255, 255);
@@ -504,7 +506,7 @@ Inicio Menu*/
   font-weight: 700;
 }
 .footer__display {
-  width: 500;
+  width: 500px;
   display: flex;
 }
 .footer__input {
@@ -550,6 +552,24 @@ Inicio Menu*/
     margin: 0;
   }
   .footer__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .footer__container {
+    flex-wrap: wrap;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .footer__form {
+    margin-top: 30px;
+    width: 456px;
+    padding: 0;
+    text-align: center;
+  }
+  .footer__display {
+    margin-bottom: 40px;
+    display: block;
     text-align: center;
   }
 }
