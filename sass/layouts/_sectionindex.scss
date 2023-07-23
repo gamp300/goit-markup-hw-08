@@ -28,10 +28,7 @@
     margin: 0;
   }
 
-
-
-
-  @media screen and (min-width: 481px) and (max-width: 767px) {
+  @media screen and (min-width: 481px) and (max-width: 768px) {
     margin: 0;
     padding: 60px 0;
     border: 0;
@@ -59,10 +56,6 @@
     }
   }
 
-
-
-
-
   @media screen and (max-width: 480px) {
     margin: 0 20px;
     padding: 2%;
@@ -89,13 +82,12 @@
   }
 }
 
-
-  
 /*//////////////////////////////////////////////////////*/
 /*Inicio SECTION - A qué nos dedicamos*/
 .block {
   display: inline-block;
   margin: 6px;
+  text-align: center;
 
   &__img {
     position: relative;
@@ -137,9 +129,9 @@
     padding-bottom: 27px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
-    
+
     &__h2 {
       display: none;
     }
@@ -153,13 +145,13 @@
   padding: 0;
   text-align: center;
 
-  &__align li{
-  display: inline-block;
-  min-width: 200px;
-  margin: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  background-color: white;
+  &__align li {
+    display: inline-block;
+    min-width: 200px;
+    margin: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: white;
   }
 }

@@ -200,7 +200,7 @@ Inicio Menu*/
     line-height: 2;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .header__title {
     display: grid;
     padding: 100px 200px;
@@ -296,7 +296,7 @@ Inicio Menu*/
 .item__parrafo {
   margin: 0;
 }
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .item {
     margin: 0;
     padding: 60px 0;
@@ -351,6 +351,7 @@ Inicio Menu*/
 .block {
   display: inline-block;
   margin: 6px;
+  text-align: center;
 }
 .block__img {
   position: relative;
@@ -387,7 +388,7 @@ Inicio Menu*/
   padding-top: 27px;
   padding-bottom: 27px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .block {
     display: none;
   }
@@ -467,7 +468,7 @@ Inicio Menu*/
   /*Section 2*/
   /*Section 3*/
   /* Estilos para pantallas más grandes (ancho mínimo de 768px) */
-  /* Estilos para pantallas entre 481px y 767px */
+  /* Estilos para pantallas entre 481px y 768px */
 }
 .footer__container {
   display: flex;
@@ -506,7 +507,7 @@ Inicio Menu*/
   font-weight: 700;
 }
 .footer__display {
-  width: 500px;
+  width: auto;
   display: flex;
 }
 .footer__input {
@@ -543,7 +544,7 @@ Inicio Menu*/
   .footer__input {
     min-width: 200px;
     display: flex;
-    margin: auto;
+    margin: 0;
   }
   .footer__display {
     min-width: 320px;
@@ -555,11 +556,12 @@ Inicio Menu*/
     text-align: center;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .footer__container {
     flex-wrap: wrap;
     margin: 30px auto;
     text-align: center;
+    justify-content: center;
   }
   .footer__form {
     margin-top: 30px;
@@ -568,7 +570,6 @@ Inicio Menu*/
     text-align: center;
   }
   .footer__display {
-    margin-bottom: 40px;
     display: block;
     text-align: center;
   }
@@ -734,7 +735,7 @@ Inicio Menu*/
     margin: 10px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .clientes__company {
     height: auto;
     position: relative;

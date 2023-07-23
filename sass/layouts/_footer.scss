@@ -51,7 +51,7 @@
   }
 
   &__display {
-    width: 500px;
+    width: auto;
     display: flex;
   }
 
@@ -94,7 +94,7 @@
     &__input {
       min-width: 200px;
       display: flex;
-      margin: auto;
+      margin: 0;
     }
 
     &__display {
@@ -112,12 +112,13 @@
 
 /* Estilos para pantallas más grandes (ancho mínimo de 768px) */
 
-/* Estilos para pantallas entre 481px y 767px */
-@media screen and (min-width: 481px) and (max-width: 767px) {
+/* Estilos para pantallas entre 481px y 768px */
+@media screen and (min-width: 481px) and (max-width: 768px) {
     &__container {
         flex-wrap: wrap;
         margin: 30px auto;
         text-align: center;
+        justify-content: center;
     }
     
     &__form{
@@ -128,7 +129,6 @@
     }
 
     &__display {
-      margin-bottom: 40px;
       display: block;
       text-align: center;
     }
