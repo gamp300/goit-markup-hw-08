@@ -388,6 +388,14 @@ Inicio Menu*/
   padding-top: 27px;
   padding-bottom: 27px;
 }
+@media screen and (max-width: 481px) {
+  .block {
+    display: none;
+  }
+  .block__h2 {
+    display: none;
+  }
+}
 
 /*//////////////////////////////////////////////////////*/
 /*Target Nuestro Equipo*/
