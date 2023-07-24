@@ -159,11 +159,11 @@
     height: 46.7px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 481px) {
     &__company {
       height: auto;
       position: relative;
-    }
+    } 
 
     &__icon {
       margin: 10px;

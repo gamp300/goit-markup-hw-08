@@ -75,7 +75,7 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 481px) {
     &__container {
       flex-direction: column;
       margin: 30px auto;
@@ -84,6 +84,8 @@
     &__section {
       text-align: center;
     }
+
+  
 
     &__form {
       padding: 0;

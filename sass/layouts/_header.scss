@@ -129,11 +129,11 @@ Inicio Menu*/
     background-position: center;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 481px) {
     &__title {
       display: grid;
       justify-content: center;
-      background-image: url(../images/movil/img-título-movil-480.jpg);
+      background-image: url(../images/movil/img-título-movil-481.jpg);
     }
 
     &__h1 {
@@ -217,4 +217,4 @@ Inicio Menu*/
   right: 16px;
   color: black;
 }
-// 480px 768px  1200px
+// 481px 768px  1200px

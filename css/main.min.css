@@ -7,9 +7,9 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .container {
-    width: 480px;
+    width: 481px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -189,11 +189,11 @@ Inicio Menu*/
   background-size: cover;
   background-position: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
   .header__title {
     display: grid;
     justify-content: center;
-    background-image: url(../images/movil/img-título-movil-480.jpg);
+    background-image: url(../images/movil/img-título-movil-481.jpg);
   }
   .header__h1 {
     font-size: 20px;
@@ -322,7 +322,7 @@ Inicio Menu*/
     height: auto;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
   .item {
     margin: 0 20px;
     padding: 2%;
@@ -387,14 +387,6 @@ Inicio Menu*/
   text-transform: uppercase;
   padding-top: 27px;
   padding-bottom: 27px;
-}
-@media screen and (max-width: 768px) {
-  .block {
-    display: none;
-  }
-  .block__h2 {
-    display: none;
-  }
 }
 
 /*//////////////////////////////////////////////////////*/
@@ -528,7 +520,7 @@ Inicio Menu*/
   height: 24px;
   cursor: pointer;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
   .footer__container {
     flex-direction: column;
     margin: 30px auto;
@@ -726,7 +718,7 @@ Inicio Menu*/
   width: auto;
   height: 46.7px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
   .clientes__company {
     height: auto;
     position: relative;
